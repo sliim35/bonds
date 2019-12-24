@@ -1,0 +1,3 @@
+export const CHANGE_CHART_DATA = 'CHANGE_CHART_DATA';
+export const CHANGE_VIEW = 'CHANGE_VIEW';
+export const CHANGE_VALUE = 'CHANGE_VALUE';

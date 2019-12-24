@@ -1,17 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import { store } from './store';
+import { createStoreWithPreloadedData } from './store';
 
-import data from './data/index.json'
+import { data } from './data';
 
 import { App } from './components/app';
 
-console.log(data)
+const store = createStoreWithPreloadedData({ chartData: data });
 
 ReactDOM.render(
-  <Provider store={store}>
-    <App />
-  </Provider>,
-  document.getElementById('root')
+    <Provider store={store}>
+        <App />
+    </Provider>,
+    document.getElementById('root')
 );
