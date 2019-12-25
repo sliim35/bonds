@@ -11,7 +11,7 @@ const AppStyled = styled.div`
 
 export const App = () => {
     return (
-        <AppStyled>
+        <AppStyled data-testid="app">
             <Form />
             <Chart />
         </AppStyled>
