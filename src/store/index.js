@@ -5,7 +5,7 @@ import { rootReducer } from './reducers';
 
 const middlewares = [thunk];
 
-export const createStoreWithPreloadedData = (data) =>
+export const createStoreWithPreloadedData = (data = {}) =>
     createStore(
         rootReducer,
         data,
