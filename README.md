@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Оценка сложности - 5/10. Планируемое время выполнения - 8 часов. Фактическое - около 8 часов.
 
-Выбрал библиотеку [Chart.js](https://www.chartjs.org/docs/latest/). Было не понятно как писать тесты для `<canvas>` в остальном много времени занял бойлерплейт и генерация значений для графика
+Выбрал библиотеку [Chart.js](https://www.chartjs.org/docs/latest/). Искал решение для моков `<canvas>` в остальном много времени занял бойлерплейт и генерация значений для графика
 
 ## Available Scripts
 
