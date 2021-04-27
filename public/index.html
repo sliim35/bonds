@@ -21,132 +21,26 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
+    <!-- DMPKit Tag Manager -->
     <script>
-      !(function () {
-        var analytics = (window.analytics = window.analytics || []);
-        if (!analytics.initialize)
-          if (analytics.invoked)
-            window.console && console.error && console.error("Segment snippet included twice.");
-          else {
-            analytics.invoked = !0;
-            analytics.methods = [
-              "trackSubmit",
-              "trackClick",
-              "trackLink",
-              "trackForm",
-              "pageview",
-              "identify",
-              "reset",
-              "group",
-              "track",
-              "ready",
-              "alias",
-              "debug",
-              "page",
-              "once",
-              "off",
-              "on",
-              "addSourceMiddleware",
-              "addIntegrationMiddleware",
-              "setAnonymousId",
-              "addDestinationMiddleware",
-            ];
-            analytics.factory = function (e) {
-              return function () {
-                var t = Array.prototype.slice.call(arguments);
-                t.unshift(e);
-                analytics.push(t);
-                return analytics;
-              };
-            };
-            for (var e = 0; e < analytics.methods.length; e++) {
-              var key = analytics.methods[e];
-              analytics[key] = analytics.factory(key);
-            }
-            analytics.load = function (key, e) {
-              var t = document.createElement("script");
-              t.type = "text/javascript";
-              t.async = !0;
-              t.src = "https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";
-              var n = document.getElementsByTagName("script")[0];
-              n.parentNode.insertBefore(t, n);
-              analytics._loadOptions = e;
-            };
-            analytics._writeKey = "x6m5AQMWSh2yFLWC60xwOjEA2wGw0SL6";
-            analytics.SNIPPET_VERSION = "4.13.2";
-            analytics.load("x6m5AQMWSh2yFLWC60xwOjEA2wGw0SL6");
-            analytics.page();
-          }
-      })();
+      (function (w, d, s, l, h, m) {
+        w[l] = w[l] || [];
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dmpkitdl" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "//" + m + "/tm.js?id=" + h + dl;
+        f.parentNode.insertBefore(j, f);
+      })(
+        window,
+        document,
+        "script",
+        "dmpkitdl",
+        "e773da9d-0570-41ac-a103-46fc99f493a9",
+        "static.dmpkit.dev"
+      );
     </script>
-
-    <script type="text/javascript">
-      (window.heap = window.heap || []),
-        (heap.load = function (e, t) {
-          (window.heap.appid = e), (window.heap.config = t = t || {});
-          var r = document.createElement("script");
-          (r.type = "text/javascript"),
-            (r.async = !0),
-            (r.src = "https://cdn.heapanalytics.com/js/heap-" + e + ".js");
-          var a = document.getElementsByTagName("script")[0];
-          a.parentNode.insertBefore(r, a);
-          for (
-            var n = function (e) {
-                return function () {
-                  heap.push([e].concat(Array.prototype.slice.call(arguments, 0)));
-                };
-              },
-              p = [
-                "addEventProperties",
-                "addUserProperties",
-                "clearEventProperties",
-                "identify",
-                "resetIdentity",
-                "removeEventProperty",
-                "setEventProperties",
-                "track",
-                "unsetEventProperty",
-              ],
-              o = 0;
-            o < p.length;
-            o++
-          )
-            heap[p[o]] = n(p[o]);
-        });
-      heap.load("4172051882");
-    </script>
-
-    <!-- Yandex.Metrika counter -->
-    <script type="text/javascript">
-      (function (m, e, t, r, i, k, a) {
-        m[i] =
-          m[i] ||
-          function () {
-            (m[i].a = m[i].a || []).push(arguments);
-          };
-        m[i].l = 1 * new Date();
-        (k = e.createElement(t)),
-          (a = e.getElementsByTagName(t)[0]),
-          (k.async = 1),
-          (k.src = r),
-          a.parentNode.insertBefore(k, a);
-      })(window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
-      ym(76436848, "init", {
-        clickmap: true,
-        trackLinks: true,
-        accurateTrackBounce: true,
-      });
-    </script>
-    <noscript
-      ><div>
-        <img
-          src="https://mc.yandex.ru/watch/76436848"
-          style="position: absolute; left: -9999px"
-          alt=""
-        /></div
-    ></noscript>
-    <!-- /Yandex.Metrika counter -->
+    <!-- End DMPKit Tag Manager -->
     <title>Bonds</title>
   </head>
   <body>
